@@ -12,7 +12,7 @@ if [[ "$local_version" == *"$latest_version"* ]] && [[ "$local_version" == *"$la
     echo "Your roller version is latest: ($latest_version)."
 else
     echo "Your roller version is NOT latest."
-    echo "Prepare upgrading to $(latest_version)..."
+    echo "Prepare upgrading to $latest_version ..."
     curl -L https://dymensionxyz.github.io/roller/install.sh | bash
 
     systemctl stop relayer
