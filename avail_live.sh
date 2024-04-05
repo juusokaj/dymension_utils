@@ -1,8 +1,7 @@
 #!/bin/bash
 
-COMMAND="/root/.avail/bin/avail-light --config /root/.avail/config/config.yml --app-id 0 --identity /root/.avail/identity/identity.toml"
+COMMAND="curl -sL1 avail.sh | bash"
 
-# Vòng lặp vô hạn để chạy và theo dõi tiến trình
 while true; do
     echo "Starting command: $COMMAND"
     # Chạy lệnh trong background
